@@ -1,6 +1,6 @@
 {
   "scopeName": "source.zenith",
-  "name": "Zenith Language",
+  "name": "Zenith Time",
   "patterns": [
     {
       "include": "#comments"

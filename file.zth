@@ -17,6 +17,12 @@ target name:
                     d1:"item 1"
                     d2:"item 2"
                     d3:"item 3"
-          laws
+          law aYYYY_MM_DD_HH_MM:
+              start_date:YYYY_MM_DD at HH_MM
+              period:duration
+              Event:
+                    A[d1]:"description"
+              GROUP:(A duration^0)
+          end_law
      end_target
 end_target

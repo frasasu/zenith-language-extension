@@ -37,16 +37,16 @@
     "grammars": [{
       "language": "zenith",
       "scopeName": "source.zenith",
-      "path": ".src/syntaxes/zenith.tmLanguage.json"
+      "path": "./src/syntaxes/zenith.tmLanguage.json"
     }],
     "snippets": [{
       "language": "zenith",
-      "path": ".src/snippets/zenith-snippets.json"
+      "path": "./src/snippets/zenith-snippets.json"
     }],
     "iconThemes": [{
       "id": "zenith-icons",
       "label": "Zenith Icons",
-      "path": ".src/icons/zenith-icon-theme.json"
+      "path": "./src/icons/zenith-icon-theme.json"
     }]
   },
   "scripts": {
