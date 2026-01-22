@@ -1,0 +1,30 @@
+
+{
+  "fonts": [],
+  "iconDefinitions": {
+    "_file_zenith": {
+      "iconPath": "./icons/file.svg"
+    }
+  },
+  "file": "_file_zenith",
+  "fileExtensions": {
+    ".zenith": "_file_zenith",
+    ".znth": "_file_zenith",
+    ".zth": "_file_zenith"
+  },
+  "languageIds": {},
+  "light": {
+    "fileExtensions": {
+      ".zenith": "_file_zenith",
+      ".znth": "_file_zenith",
+      ".zth": "_file_zenith"
+    }
+  },
+  "highContrast": {
+    "fileExtensions": {
+      ".zenith": "_file_zenith",
+      ".znth": "_file_zenith",
+      ".zth": "_file_zenith"
+    }
+  }
+}

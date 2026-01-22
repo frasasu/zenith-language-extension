@@ -1,0 +1,61 @@
+{
+  "name": "zenith-language",
+  "displayName": "Zenith Language",
+  "description": "Zenith language support with syntax highlighting, snippets and icons",
+  "version": "1.0.0",
+  "publisher": "zenith-dev",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "zenith",
+    "language",
+    "syntax",
+    "highlighting",
+    "snippets"
+  ],
+  "icon": "icons/zenith-icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frasasu/zenith-language-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frasasu/zenith-language-extension/issues"
+  },
+  "homepage": "https://github.com/frasasu/zenith-language-extension#readme",
+  "contributes": {
+    "languages": [{
+      "id": "zenith",
+      "aliases": ["Zenith", "zenith"],
+      "extensions": [".zenith", ".znth", ".zth"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "zenith",
+      "scopeName": "source.zenith",
+      "path": "./syntaxes/zenith.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "zenith",
+      "path": "./snippets/zenith-snippets.json"
+    }],
+    "iconThemes": [{
+      "id": "zenith-icons",
+      "label": "Zenith Icons",
+      "path": "./icons/zenith-icon-theme.json"
+    }]
+  },
+  "scripts": {
+    "vscode:prepublish": "echo 'Packaging extension...'",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.21.0"
+  },
+  "license": "MIT"
+}

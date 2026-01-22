@@ -1,0 +1,36 @@
+name: Publier l'extension
+
+on:
+  push:
+    tags:
+      - 'v*' # Se déclenche quand vous créez un tag de version (ex: v1.0.0)
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Installer vsce
+        run: npm install -g @vscode/vsce
+
+      - name: Packager l'extension
+        run: vsce package
+
+      - name: Publier l'extension
+        run: |
+          vsce publish -p ${{ secrets.VSCE_PAT }}
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}

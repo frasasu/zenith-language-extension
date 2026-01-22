@@ -1,0 +1,47 @@
+
+
+target vie_equilibre:
+     key:"Equilibrer la vie professionnelle."
+     dictionnary:
+               d1:"Apprentissage de la programmation."
+               d2:"Etudes universitaires."
+               d3:"Religion."
+               d4:"Projets de developpement."
+               d5:"Maitrise de soi."
+    law a2025_12_19_15_30:
+        start_date:2025-12-19 at 15:30
+        period:45
+        Event:
+              A[d2]:"Signature de contrat de pret-bourse."
+        GROUP:(A 45^0)
+    end_law
+end_target
+
+target programmation:
+     key:"programmation"
+     dictionnary:
+                    d1[d1]:"Expertise en developpement logiciel."
+                    d2[d1]:"Expertise en developpement Android et IOS."
+                    d3[d1]:"Expertise en developpement web."
+     law a2025_12_25_15_45:
+            start_date:2025-12-25 at 15:45
+            period:30
+            Event:
+                  A[d3]:"Apprentissage de pandas."
+            GROUP:(A 30^0)
+        end_law
+end_target
+
+law a2025_12_20_20_30:
+    start_date:2025-12-20 at 21:00
+    period:3.0
+    Event:
+          A[d1]:"Theories de flet desktop pour le frontend."
+          B[d2]:"Theories de python basiques."
+          C[d3]:"Theories de python creation des DSLs"
+    GROUP:(A 1.0^0 - B 1.0^0 - C 1.0^0 )
+end_law
+law a2025_12_19_15_30:
+    start_date:2025-12-19 at 15:30  GROUP:(A 2
+    ^0 - B 1.0^0 )
+

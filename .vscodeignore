@@ -1,0 +1,14 @@
+.gitignore
+.vscodeignore
+node_modules
+src/typings
+*.ts
+*.map
+*.tsbuildinfo
+.yarnrc
+yarn.lock
+package-lock.json
+.github
+*.bat
+install.js
+examples/
