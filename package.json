@@ -18,7 +18,7 @@
     "highlighting",
     "snippets"
   ],
-  "icon": "src/icons/zenith-icon.png",
+  "icon": "icons/zenith-icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/frasasu/zenith-language-extension.git"
@@ -37,16 +37,16 @@
     "grammars": [{
       "language": "zenith",
       "scopeName": "source.zenith",
-      "path": "./src/syntaxes/zenith.tmLanguage.json"
+      "path": "./syntaxes/zenith.tmLanguage.json"
     }],
     "snippets": [{
       "language": "zenith",
-      "path": "./src/snippets/zenith-snippets.json"
+      "path": "./snippets/zenith-snippets.json"
     }],
     "iconThemes": [{
       "id": "zenith-icons",
       "label": "Zenith Icons",
-      "path": "./src/icons/zenith-icon-theme.json"
+      "path": "./icons/zenith-icon-theme.json"
     }]
   },
   "scripts": {
