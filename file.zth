@@ -17,6 +17,14 @@ target name:
                     d1:"item 1"
                     d2:"item 2"
                     d3:"item 3"
+          laws
+     end_target
+     target name:
+          key:"description"
+          dictionnary:
+                    d1:"item 1"
+                    d2:"item 2"
+                    d3:"item 3"
           law aYYYY_MM_DD_HH_MM:
               start_date:YYYY_MM_DD at HH_MM
               period:duration
